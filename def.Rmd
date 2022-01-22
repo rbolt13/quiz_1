@@ -7,6 +7,65 @@ knit: (function(input_file, encoding) {
  output_file=file.path(dirname(input_file), out_dir, 'def.html'))})
 output:
   html_document:
+    toc: true
+    toc_float: TRUE
     theme: journal
 ---
 
+```{r setup, echo=F}
+knitr::opts_chunk$set(error=FALSE, 
+                      message= FALSE,
+                      warning=FALSE,
+                      echo=FALSE)
+```
+
+
+Before hopping into our proof, lets look at a few definitions with some [Geogebra](https://www.geogebra.org/geometry) images. 
+
+## Vertical Angles 
+
+In class we defined vertical angles as being "across from each other". 
+
+```{r, echo = F, out.width = "40%", fig.align='left', fig.cap='**Fig. 1: ** Vertical angles are shown in pink.'}
+knitr::include_graphics("img/img1.png")
+```
+
+We can see a simple example of this in **Fig. 1** where a pair of pink angles $\angle AOB$ and $\angle COD$ are vertical to each other. 
+
+Note that $\angle AOC$ and $\angle BOD$ are vertical angles as well.
+
+## Congruence 
+
+$x\cong y$ if there is an $\underline{\text{isometry}}$ that superimposes x onto y. 
+
+- Isometry is a map that preserves distance and angles 
+
+  - translation (move without turning)
+  
+  - rotation (moving about a fixed point)
+  
+  - reflection (mirror)
+  
+  - combination 
+
+```{r, echo = F, out.width = "40%", fig.align='left', fig.cap='**Fig. 2: ** Two congruent triangles'}
+knitr::include_graphics("img/img3.png")
+```
+
+In **Fig. 2** we see the two triangles are congruent, and would only need a translation isometry or two to map $\triangle ABC$ onto $\triangle A_1B_1C_1$. 
+
+## Supplementary Angles 
+
+We defined supplementary angles as angles whose measurement adds up to $180^\circ$.
+
+```{r, echo = F, out.width = "40%", fig.align='left', fig.cap='**Fig. 3: **Supplementary angles are shown in pink and orange.'}
+knitr::include_graphics("img/img2.png")
+```
+
+ In **Fig.3** we can clearly see that $m\angle AOC$ shown in pink and $m\angle AOB$ in orange adds to a straight line or $180^\circ$. We can also see three other pairs of supplementary angles: 
+
+- $m\angle AOB+m\angle BOD=180^\circ$
+
+- $m\angle BOD+m\angle COD=180^\circ$
+
+- $m\angle COD+m\angle AOC=180^\circ$

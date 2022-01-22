@@ -7,5 +7,39 @@ knit: (function(input_file, encoding) {
  output_file=file.path(dirname(input_file), out_dir, 'thm.html'))})
 output:
   html_document:
+    toc: true
+    toc_float: TRUE
     theme: journal
 ---
+
+Included are the axioms and theorems used to prove that two vertical angles are congruent. 
+
+## Axioms of Angle Measure 
+
+1. Right angle measures $90^\circ$
+
+2. $m\angle ABC=m\angle CBA$
+
+3. If D is the interior of $\angle ABC$, then $m\angle ABC=m\angle ABD+m\angle BDC$
+
+4. There exists a **unique** ray that is the angle bisector of $\angle ABC$. 
+
+## Congruence and Angle Measure Theorem
+
+$\angle ABC\cong \angle DEF \Leftrightarrow m\angle ABC=m\angle DEF$
+
+1. If two angles are congruent then the measure of those two angles is the same. 
+
+2. If the measure of two angles is the same, then those two angles are congruent. 
+
+(Note that the measure for angles that will be used on the proof will be in degrees. )
+
+## Supplementray Interior Angle Theorem 
+
+If two lines are parallel then the supplementary interior angles add to $180^\circ$. 
+
+```{r, echo = F, out.width = "40%", fig.align='left', fig.cap='**Fig. 4: ** Supplementary interior angles are shown in red.'}
+knitr::include_graphics("img/img4.png")
+```
+
+In **Fig. 4** the supplementary interior angles $\angle AEF$ and $\angle CFE$ are shown in red and add up to $180^\circ$. 

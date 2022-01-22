@@ -1,5 +1,6 @@
 ---
-title: "About"
+title: "Math 338 - Quiz 1"
+subtitle: "Due Sunday 1/23"
 knit: (function(input_file, encoding) {
   out_dir <- 'docs';
   rmarkdown::render(input_file,
@@ -10,6 +11,7 @@ output:
     theme: journal
 ---
 
+_Prove for the following statement using course resources such as our notes and textbooks. Your proof should be your own work, so you should not use any other resources. Record a short presentation or create a slide show explaining your proof. Make sure that you clearly state any definitions, axioms, or theorems that you are using._
 
+# Suppose two angles are vertical. Prove that they are congruent. 
 
-These are class notes and R code for Rebecca Tramel's MTH-338 : Modern College Geometry Winter term 2022 at Portland State University.
