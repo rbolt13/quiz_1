@@ -9,7 +9,7 @@ output:
   html_document:
     toc: true
     toc_float: TRUE
-    theme: journal
+    theme: flatly
 ---
 
 ```{r setup, echo=F}

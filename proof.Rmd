@@ -8,7 +8,7 @@ knit: (function(input_file, encoding) {
  output_file=file.path(dirname(input_file), out_dir, 'proof.html'))})
 output:
   html_document:
-    theme: journal
+    theme: flatly
 ---
 
 ```{r, echo = F, out.width = "40%", fig.align='left', fig.cap='**Fig. 1: **Two intesecting lines segments form vertical angles, shown in pink.'}
@@ -52,6 +52,8 @@ We also know that there are four pairs of supplementary angles, two of which are
 So, $m\angle AOB+m\angle BOD=m\angle BOD+m\angle COD$. 
 
 And if we subtract $m\angle BOD$ from both sides we get, $m\angle AOB=m\angle COD$. 
+
+It would then make sense that $f(O)=O$, $f(A)=C$, and $f(B)=D$. 
 
 Then by definition of reflection $f(m\angle AOB)=m\angle COD$. 
 

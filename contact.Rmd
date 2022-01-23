@@ -7,7 +7,7 @@ knit: (function(input_file, encoding) {
  output_file=file.path(dirname(input_file), out_dir, 'contact.html'))})
 output:
   html_document:
-    theme: journal
+    theme: flatly
 ---
 
 Like what you see or have a specific question? Check out other projects I've worked on via my personal website / blog [here](https://rbolt2.netlify.app/), or send me an an email at **rbolt@pdx.edu**.

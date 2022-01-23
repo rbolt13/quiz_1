@@ -9,7 +9,7 @@ output:
   html_document:
     toc: true
     toc_float: TRUE
-    theme: journal
+    theme: flatly
 ---
 
 Included are the axioms and theorems used to prove that two vertical angles are congruent. 
